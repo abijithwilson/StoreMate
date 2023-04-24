@@ -1,0 +1,20 @@
+export declare const fetchAdminProfile = "SELECT admin_id, first_name, last_name,\n email, m_role.role_id, m_role.role_name, phone, countries.country_id, \n countries.country_name, states.state_id, states.state_name, address, image,\n   updated_by, updated_at FROM m_admin\nINNER JOIN countries\nON m_admin.country_id = countries.country_id\nINNER JOIN states\nON m_admin.state_id = states.state_id\nINNER JOIN m_role\nON m_role.role_id = m_admin.role_id\nWHERE m_admin.admin_id = $1 AND m_admin.is_deleted = false";
+export declare const listAllStoreAdminQuery: (adminName: any, storeName: any, countryId: any, stateId: any, districtId: any, limit: any, offset: any) => {
+    query: string;
+    dataValue: any[];
+};
+export declare const StoreAdminProfileFetchQuery = "select  \nm_admin.admin_id ,\nm_admin.first_name ,\nm_admin.last_name ,\nm_admin.email ,\nm_admin.phone ,\nm_admin.address,\nm_admin.image ,\nm_admin.state_id ,\nm_admin.country_id,\ncountries.country_name,\nstates.state_name,\nCOALESCE(json_agg(jsonb_build_object(\n            'storeId',ms.store_id,\n            'storeName',concat(ms.store_name, ' - ', d.district_name),\n            'districtId',d.district_id\n            )) FILTER (WHERE ms.store_id  IS NOT NULL), '[]')AS stores\nfrom m_admin  \nLEFT JOIN t_admin_store_map tasm\nON m_admin.admin_id  = tasm.admin_id \nLEFT JOIN m_store ms\nON tasm.store_id = ms.store_id  \nLEFT JOIN countries ON m_admin.country_id= countries.country_id\nLEFT JOIN states ON m_admin.state_id= states.state_id\nLEFT JOIN districts d ON ms.district_id = d.district_id\nwhere m_admin.admin_id = $1 and role_id = 2\nAND m_admin.is_deleted = false\nGROUP by m_admin.admin_id ,tasm.admin_id,countries.country_name,\nstates.state_name\n";
+export declare const StoreAdminProfileUpdateQuery = "WITH updateTable AS (\n   UPDATE m_admin\n   SET phone =COALESCE($2,phone),\n       country_id =COALESCE($3,country_id),\n       state_id=COALESCE($4,state_id),\n       address=COALESCE($5,address),\n       updated_by=COALESCE($6,updated_by),\n       first_name=COALESCE($7,first_name),\n       last_name=COALESCE($8,last_name),\n       updated_at=CURRENT_TIMESTAMP\n   WHERE admin_id=$1 AND is_deleted = false\n   )";
+export declare const AssignedStoresQuery: (assignedStoreIdValues: string) => string;
+export declare const DeleteStoresQuery: (unAssignedStoreIdValues: string) => string;
+export declare const statementQuery = " SELECT admin_id\n    FROM t_admin_store_map\n    WHERE admin_id=$1";
+export declare const deleteStoreAdminQuery: (idString: string) => string;
+export declare const storeAdminInviteQuery: (assignedStoreIdValues: string) => string;
+export declare const singleOfferProductListQuery: (limit: any, offset: any, sortField: any, sortOrder: any, filterCategory: any, assigned: any) => {
+    query: string;
+    dataValue: any[];
+};
+export declare const singleOfferProductAssignQuery: (assignedProductIdValues: any) => string;
+export declare const singleOfferProductUnassignQuery = "\ndelete from t_product_offer_map \nwhere offer_id = $1 and product_id = $2 \nreturning id";
+export declare const deleteSectionQuery = "\nwith deleteSectionInBeacon as (\n  update m_beacon \n  set section_id =null \n  where section_id = $1\n  returning beacon_id\n  ),\n  deleteBeaconFromSectionVisit as (\n  delete from t_section_visit tsv\n  where tsv.beacon_id = (select beacon_id\n  from deleteSectionInBeacon)\n  ),\n  deleteSectionInProductMap as (\n  update t_section_product_map  \n  set section_id =null \n  where section_id = $1\n  ),\n  deleteSectionInStoreMap as (\n  delete from t_store_section_map \n  where section_id =$1\n  )\n  update m_section  \n  set is_deleted = true  \n  where section_id = $1 and is_deleted = false\n  returning section_id \n";
+export declare const deleteOfferQuery = "\nwith deleteOffer as (\n  update m_offer\n  set is_deleted = true\n  where offer_id = $1 and is_deleted = false\n  returning offer_id\n),\ndeleteFromProductMap as (\n  delete from t_product_offer_map \n  where offer_id = (select offer_id from deleteOffer)\n)\ndelete from t_offer_store_map \nwhere offer_id = (select offer_id from deleteOffer)\n";

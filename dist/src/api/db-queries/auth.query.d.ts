@@ -1,0 +1,1 @@
+export declare const loginAdminQuery = "SELECT admin_id,email,password,salt,\n    m_role.role_name  \n    FROM m_admin \n    FULL JOIN m_role on \n    m_role.role_id=m_admin.role_id\n    WHERE email= $1;";

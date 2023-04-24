@@ -1,0 +1,31 @@
+import { SingleOfferProductListResponseDto, SingleOfferProductListPaginationDto, SingleOfferProductAssignDto, AdminPasswordUpdateDto } from './../dto/admin.dto';
+import { StoreAdminInviteDto } from './../dto/store.dto';
+import { Observable } from 'rxjs';
+import { AdminUpdateDto, DeleteStoreAdminDto, FetchAllStoreAdminPaginationDTO, StoreAdminUpdateDto, MessageAdminFetchDto, UpdateOffer, OfferFetchMessageDto, CreateOffer } from '../dto/admin.dto';
+import { MessageDto } from '../dto/message.dto';
+import { AdminService } from './admin.service';
+import { OfferListParamDto, OfferListResponseDto } from '../dto/offer.dto';
+import { CreateSectionDto, SectionMessageDto, UpdateSectionDto } from '../dto/section.dto';
+export declare class AdminController {
+    private adminService;
+    constructor(adminService: AdminService);
+    adminProfileUpdate(id: number, body: AdminUpdateDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    fetchAdminProfile(id: number): Observable<MessageDto | Record<null, null>>;
+    getAllStoreAdminDetails(param: FetchAllStoreAdminPaginationDTO): Observable<MessageDto | Record<null, null>>;
+    inviteStoreAdmin(inviteBody: StoreAdminInviteDto, jwtBody: any): Promise<import("../dto/auth.dto").MessageDto>;
+    storeAdminProfileUpdate(id: number, body: StoreAdminUpdateDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    fetchStoreAdminProfile(id: number): Observable<MessageAdminFetchDto | Record<null, null>>;
+    deleteStoreAdminDetails(param: DeleteStoreAdminDto): Observable<MessageDto | Record<null, null>>;
+    updateOfferDetails(body: UpdateOffer, id: number, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    getofferDetails(id: number): Observable<OfferFetchMessageDto | Record<null, null>>;
+    createOfferDtails(body: CreateOffer, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    deleteOffer(id: number): Observable<MessageDto | Record<null, null>>;
+    fetchOfferList(queryParam: OfferListParamDto): Observable<OfferListResponseDto | Record<null, null>>;
+    createSection(body: CreateSectionDto, jwtBody: any): Observable<SectionMessageDto | Record<null, null>>;
+    deleteSection(sectionId: number): Observable<SectionMessageDto | Record<null, null>>;
+    updateSection(sectionId: number, body: UpdateSectionDto, jwtBody: any): Observable<SectionMessageDto | Record<null, null>>;
+    singleOfferProductList(offerId: number, param: SingleOfferProductListPaginationDto): Observable<SingleOfferProductListResponseDto | Record<null, null>>;
+    singleOfferProductAssign(body: SingleOfferProductAssignDto): Observable<MessageDto | Record<null, null>>;
+    singleOfferProductUnassign(offerId: number, productId: number): Observable<MessageDto | Record<null, null>>;
+    adminPasswordUpdate(adminId: number, jwtBody: any, body: AdminPasswordUpdateDto): Promise<MessageDto | Record<null, null>>;
+}

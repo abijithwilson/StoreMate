@@ -1,0 +1,41 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14.4
+    user: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: storemate
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qburst
+    ports:
+      - '5434:5432'
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready" ]
+      start_period: 1s0s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      LOGGER_LEVEL: debug
+      SWAGGER_SERVER: "true"
+      APPLICATION_VERSION: v1
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: storemate
+      DB_USERNAME: postgres
+      DB_PASSWORD: qburst
+    # Run a command against the development stage of the image
+    command: npm run start:dev
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres

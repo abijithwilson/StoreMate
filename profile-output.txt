@@ -1,0 +1,1297 @@
+Statistical profiling result from isolate-0x5877870-16541-v8.log, (3183 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   2549   80.1%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+     69    2.2%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     11    0.3%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+      7    0.2%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     43    1.4%    7.9%  LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     16    0.5%    2.9%  LazyCompile: *compareByOriginalPositions /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/util.js:304:36
+     11    0.3%    2.0%  LazyCompile: *resolve node:path:1091:10
+      9    0.3%    1.6%  LazyCompile: *SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      5    0.2%    0.9%  Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      4    0.1%    0.7%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      3    0.1%    0.5%  LazyCompile: *realpathSync node:fs:2425:22
+      2    0.1%    0.4%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.1%    0.4%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      2    0.1%    0.4%  LazyCompile: *normalizeString node:path:66:25
+      2    0.1%    0.4%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.1%    0.4%  Function: ^removeListener node:events:689:28
+      2    0.1%    0.4%  Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:396:26
+      1    0.0%    0.2%  RegExp: ^([0-9][0-9][0-9][0-9])-([0-9][0-9]?)-([0-9][0-9]?)(?:[Tt]|[ \t]+)([0-9][0-9]?):([0-9][0-9]):([0-9][0-9])(?:\.([0-9]*))?(?:[ \t]*(Z|([-+])([0-9][0-9]?)(?::([0-9][0-9]))?))?$
+      1    0.0%    0.2%  RegExp: ^((?:@[^/\\%]+\/)?[^./\\%][^/\\%]*)(\/.*)?$
+      1    0.0%    0.2%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.2%  RegExp: (?:\/\/[@#][\s]*sourceMappingURL=([^\s'"]+)[\s]*$)|(?:\/\*[@#][\s]*sourceMappingURL=([^\s*'"]+)[\s]*(?:\*\/)[\s]*$)
+      1    0.0%    0.2%  LazyCompile: *writeNode /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:797:19
+      1    0.0%    0.2%  LazyCompile: *writeBlockMapping /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:673:27
+      1    0.0%    0.2%  LazyCompile: *updateChildren node:internal/modules/cjs/loader:165:24
+      1    0.0%    0.2%  LazyCompile: *normalize /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/util.js:80:19
+      1    0.0%    0.2%  LazyCompile: *isPrintable /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:195:21
+      1    0.0%    0.2%  LazyCompile: *getMetadata /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:352:29
+      1    0.0%    0.2%  LazyCompile: *dirname node:path:1275:10
+      1    0.0%    0.2%  LazyCompile: *detectType /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:751:20
+      1    0.0%    0.2%  LazyCompile: *SourceMapConsumer_charIsMappingSeparator /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:91:52
+      1    0.0%    0.2%  LazyCompile: *Mapping /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:453:17
+      1    0.0%    0.2%  Function: ^writeBlockMapping /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:673:27
+      1    0.0%    0.2%  Function: ^validateString node:internal/validators:118:24
+      1    0.0%    0.2%  Function: ^validateRoutePath /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:148:22
+      1    0.0%    0.2%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.2%  Function: ^isFileType node:fs:205:20
+      1    0.0%    0.2%  Function: ^isEnumArray /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.js:7:21
+      1    0.0%    0.2%  Function: ^isEmpty /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/utils/shared.utils.js:49:17
+      1    0.0%    0.2%  Function: ^isBoolean /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/type/bool.js:20:19
+      1    0.0%    0.2%  Function: ^inspectNode /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:918:21
+      1    0.0%    0.2%  Function: ^getSymbolsIn /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:6092:64
+      1    0.0%    0.2%  Function: ^getOptionValue node:internal/options:39:24
+      1    0.0%    0.2%  Function: ^dirname node:path:1275:10
+      1    0.0%    0.2%  Function: ^detectType /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:751:20
+      1    0.0%    0.2%  Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1    0.0%    0.2%  Function: ^castPath /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:4517:22
+      1    0.0%    0.2%  Function: ^baseIsArguments /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:3269:29
+      1    0.0%    0.2%  Function: ^applyDefaults /home/qbuser/Documents/store-mate-api/node_modules/object-hash/index.js:61:23
+      1    0.0%    0.2%  Function: ^ToPrimitive /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:725:29
+      1    0.0%    0.2%  Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1    0.0%    0.2%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.2%  Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    0.0%    0.2%  Function: ^IsPropertyKey /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:820:31
+      1    0.0%    0.2%  Function: ^<anonymous> node:buffer:349:36
+      1    0.0%    0.2%  Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/tslib/tslib.js:154:48
+      1    0.0%    0.2%  Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13657:48
+      1    0.0%    0.2%  Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/helpers/transient-instances.js:12:14
+
+ [C++]:
+   ticks  total  nonlib   name
+    111    3.5%   20.3%  __write
+     59    1.9%   10.8%  fwrite
+     31    1.0%    5.7%  __lll_lock_wait
+     29    0.9%    5.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+     24    0.8%    4.4%  syscall
+     24    0.8%    4.4%  epoll_pwait
+     17    0.5%    3.1%  __libc_malloc
+     14    0.4%    2.6%  _IO_file_xsputn
+     12    0.4%    2.2%  std::ostream::sentry::sentry(std::ostream&)
+     12    0.4%    2.2%  __pthread_cond_wait
+     10    0.3%    1.8%  cfree
+      7    0.2%    1.3%  __mprotect
+      7    0.2%    1.3%  __GI___pthread_mutex_unlock
+      6    0.2%    1.1%  __GI___pthread_mutex_lock
+      5    0.2%    0.9%  std::ostream& std::ostream::_M_insert<long>(long)
+      4    0.1%    0.7%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      4    0.1%    0.7%  fflush
+      3    0.1%    0.5%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      2    0.1%    0.4%  std::ostream::operator<<(int)
+      2    0.1%    0.4%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)
+      2    0.1%    0.4%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.1%    0.4%  operator delete(void*)
+      2    0.1%    0.4%  fputc
+      2    0.1%    0.4%  __pthread_cond_signal
+      2    0.1%    0.4%  __libc_read
+      1    0.0%    0.2%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      1    0.0%    0.2%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.2%  sigemptyset
+      1    0.0%    0.2%  operator new(unsigned long)
+      1    0.0%    0.2%  do_futex_wait.constprop.0
+      1    0.0%    0.2%  accept4
+      1    0.0%    0.2%  __munmap
+      1    0.0%    0.2%  __libc_write
+      1    0.0%    0.2%  __errno_location
+      1    0.0%    0.2%  __clock_gettime
+      1    0.0%    0.2%  _IO_file_write
+
+ [Summary]:
+   ticks  total  nonlib   name
+    143    4.5%   26.1%  JavaScript
+    404   12.7%   73.9%  C++
+    227    7.1%   41.5%  GC
+   2636   82.8%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     99   33.2%    3.1%  __write
+     55   18.5%    1.7%  fwrite
+     28    9.4%    0.9%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+     24    8.1%    0.8%  syscall
+     16    5.4%    0.5%  __libc_malloc
+     14    4.7%    0.4%  _IO_file_xsputn
+     12    4.0%    0.4%  std::ostream::sentry::sentry(std::ostream&)
+      8    2.7%    0.3%  cfree
+      5    1.7%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)
+      5    1.7%    0.2%  __mprotect
+      5    1.7%    0.2%  __GI___pthread_mutex_lock
+      4    1.3%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      3    1.0%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    1.0%    0.1%  fflush
+      2    0.7%    0.1%  std::ostream::operator<<(int)
+      2    0.7%    0.1%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.7%    0.1%  operator delete(void*)
+      2    0.7%    0.1%  fputc
+      2    0.7%    0.1%  __GI___pthread_mutex_unlock
+      1    0.3%    0.0%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)
+      1    0.3%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      1    0.3%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.3%    0.0%  operator new(unsigned long)
+      1    0.3%    0.0%  __errno_location
+      1    0.3%    0.0%  __clock_gettime
+      1    0.3%    0.0%  _IO_file_write
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2549   80.1%  /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+   2025   79.4%    /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+   1176   58.1%      Function: ^compileFunction node:vm:308:25
+   1013   86.1%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+   1012   99.9%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+   1006   99.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    158   13.4%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+    158  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    158  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     67    3.3%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     53   79.1%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      8   15.1%          Function: ~<anonymous> node:http:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   13.2%          Function: ~<anonymous> node:http2:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    9.4%          Function: ~<anonymous> node:crypto:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    7.5%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.7%          Function: ~<anonymous> node:tls:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:module:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:internal/http2/core:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:internal/child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:https:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:_tls_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%            LazyCompile: ~get node:crypto:287:8
+      1    1.9%          LazyCompile: ~get node:dns:334:8
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.9%          Function: ~<anonymous> node:worker_threads:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/worker:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/http2/compat:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:dgram:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:assert:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     13   19.4%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     13  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     13  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.5%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     63    3.1%      /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      6    9.5%        LazyCompile: ~compile /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:150:17
+      3   50.0%          LazyCompile: ~add /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:407:39
+      3  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/mailparser/lib/mail-parser.js:1:1
+      2   33.3%          LazyCompile: ~tlds /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:616:41
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/mailparser/lib/mail-parser.js:1:1
+      1   16.7%          LazyCompile: ~LinkifyIt /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:368:19
+      1  100.0%            LazyCompile: ~LinkifyIt /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:368:19
+      4    6.3%        LazyCompile: ~86019 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:20136
+      4  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      4  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      3    4.8%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      3  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2    3.2%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isFQDN.js:61:31
+      2  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      2  100.0%            LazyCompile: ~isFQDN /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isFQDN.js:22:16
+      2    3.2%        Function: ^compileFunction node:vm:308:25
+      2  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      2  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      2    3.2%        Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1   50.0%          Function: ^on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:96:35
+      1  100.0%            Function: ^addNewRoute /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/route.js:202:26
+      1   50.0%          Function: ^Router._rebuild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:498:38
+      1  100.0%            Function: ^_off /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:348:39
+      2    3.2%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1   50.0%            Function: ^createPool node:buffer:151:20
+      1   50.0%            Function: ^allocate node:buffer:398:18
+      2    3.2%        Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.js:16:12
+      2  100.0%          Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      2  100.0%            Function: ^decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1    1.6%        LazyCompile: ~wordsRegexp /home/qbuser/Documents/store-mate-api/node_modules/is-expression/node_modules/acorn/dist/acorn.js:276:23
+      1  100.0%          LazyCompile: ~buildUnicodeData /home/qbuser/Documents/store-mate-api/node_modules/is-expression/node_modules/acorn/dist/acorn.js:3247:28
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/is-expression/node_modules/acorn/dist/acorn.js:5:19
+      1    1.6%        LazyCompile: ~transform /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/pipes/validation.pipe.js:37:20
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.6%        LazyCompile: ~retrieveSourceMapURL /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:148:30
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:185:34
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:83:18
+      1    1.6%        LazyCompile: ~resolveYamlTimestamp /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/type/timestamp.js:22:30
+      1  100.0%          LazyCompile: ~testImplicitResolving /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:172:31
+      1  100.0%            LazyCompile: ~testAmbiguity /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:421:27
+      1    1.6%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:507:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      1    1.6%        LazyCompile: ~replaceXRange /home/qbuser/Documents/store-mate-api/node_modules/jsonwebtoken/node_modules/semver/semver.js:1088:24
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/jsonwebtoken/node_modules/semver/semver.js:1083:41
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.6%        LazyCompile: ~replaceGTE0 /home/qbuser/Documents/store-mate-api/node_modules/semver/classes/range.js:445:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/semver/classes/range.js:118:12
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.6%        LazyCompile: ~reflectParamInjectables /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:145:28
+      1  100.0%          Function: ^reflectDynamicMetadata /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:117:27
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:112:29
+      1    1.6%        LazyCompile: ~load /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/cheerio/lib/load.js:21:14
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/cheerio/lib/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%        LazyCompile: ~isFQDN /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isFQDN.js:22:16
+      1  100.0%          LazyCompile: ~isEmail /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isEmail.js:77:17
+      1  100.0%            LazyCompile: ~isEmail /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/decorator/string/IsEmail.js:14:17
+      1    1.6%        LazyCompile: ~expand /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:1301:20
+      1  100.0%          LazyCompile: ~XRegExp.addUnicodePackage /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:1371:42
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:1440:11
+      1    1.6%        LazyCompile: ~_parse /home/qbuser/Documents/store-mate-api/node_modules/@sideway/formula/lib/index.js:48:11
+      1  100.0%          LazyCompile: ~exports.Parser /home/qbuser/Documents/store-mate-api/node_modules/@sideway/formula/lib/index.js:26:16
+      1  100.0%            LazyCompile: ~_ref /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/template.js:203:9
+      1    1.6%        LazyCompile: ~SemVer /home/qbuser/Documents/store-mate-api/node_modules/semver/classes/semver.js:8:15
+      1  100.0%          LazyCompile: ~compare /home/qbuser/Documents/store-mate-api/node_modules/semver/functions/compare.js:2:17
+      1  100.0%            LazyCompile: ~gte /home/qbuser/Documents/store-mate-api/node_modules/semver/functions/gte.js:2:13
+      1    1.6%        LazyCompile: ~Range.parseRange /home/qbuser/Documents/store-mate-api/node_modules/jsonwebtoken/node_modules/semver/semver.js:891:39
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/jsonwebtoken/node_modules/semver/semver.js:866:53
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.6%        LazyCompile: ~Object.create.t.exports /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:163686
+      1  100.0%          LazyCompile: ~74448 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:241670
+      1  100.0%            Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1    1.6%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:46553
+      1  100.0%          LazyCompile: ~t.exports /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:57276
+      1  100.0%            LazyCompile: ~t.exports /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:46513
+      1    1.6%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:356940
+      1  100.0%          LazyCompile: ~e.exports /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:319065
+      1  100.0%            LazyCompile: ~53242 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:356852
+      1    1.6%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-transformer.js:11:57
+      1  100.0%          Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13468:34
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:4959:22
+      1    1.6%        LazyCompile: ~81046 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:328081
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~4115 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:359431
+      1    1.6%        LazyCompile: *_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1  100.0%          Function: ^on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:96:35
+      1  100.0%            Function: ^addNewRoute /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/route.js:202:26
+      1    1.6%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%        LazyCompile: *ArraySet_add /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/array-set.js:49:47
+      1  100.0%          LazyCompile: ~ArraySet_fromArray /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/array-set.js:26:49
+      1  100.0%            LazyCompile: ~BasicSourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:288:32
+      1    1.6%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/pino/lib/levels.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%        Function: ^writeBlockMapping /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:673:27
+      1  100.0%          Function: ^writeNode /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:797:19
+      1  100.0%            Function: ^writeBlockMapping /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:673:27
+      1    1.6%        Function: ^transform /home/qbuser/Documents/store-mate-api/node_modules/class-transformer/cjs/TransformOperationExecutor.js:29:14
+      1  100.0%          Function: ^transform /home/qbuser/Documents/store-mate-api/node_modules/class-transformer/cjs/TransformOperationExecutor.js:29:14
+      1  100.0%            Function: ^plainToInstance /home/qbuser/Documents/store-mate-api/node_modules/class-transformer/cjs/ClassTransformer.js:22:20
+      1    1.6%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.6%        Function: ^realpathSync node:fs:2425:22
+      1  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1    1.6%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.6%        Function: ^mapParamType /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/parameter-metadata-accessor.js:22:17
+      1  100.0%          Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/parameter-metadata-accessor.js:19:93
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13468:34
+      1    1.6%        Function: ^finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      1  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.6%        Function: ^encodePathChars node:internal/url:1443:25
+      1  100.0%          Function: ^pathToFileURL node:internal/url:1458:23
+      1  100.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.6%        Function: ^createInstancesOfInjectables /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:62:39
+      1  100.0%          Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:31:53
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.6%        Function: ^addLeadingSlash /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/utils/shared.utils.js:25:25
+      1  100.0%          Function: ^validateRoutePath /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:148:22
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:135:34
+      1    1.6%        Function: ^OrdinaryGetPrototypeOf /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:872:40
+      1  100.0%          Function: ^OrdinaryGetMetadata /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:600:37
+      1  100.0%            Function: ^getMetadata /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:352:29
+      1    1.6%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.6%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.6%        Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/html-to-text/node_modules/entities/lib/decode.js:19:32
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/html-to-text/node_modules/entities/lib/decode.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%        Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:71:111
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:71:79
+     56    2.8%      Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      7   12.5%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      7  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:236
+      7  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:226
+      3    5.4%        LazyCompile: ~73935 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:733176
+      3  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      3  100.0%            LazyCompile: ~55776 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:228698
+      2    3.6%        LazyCompile: ~97451 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:117514
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      2    3.6%        LazyCompile: ~90242 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:260951
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      2    3.6%        LazyCompile: ~86672 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:312842
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            LazyCompile: ~90 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:1938
+      2    3.6%        LazyCompile: ~86019 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:20136
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      2    3.6%        LazyCompile: ~76467 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:102891
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            LazyCompile: ~97451 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:117514
+      2    3.6%        LazyCompile: ~37038 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159455
+      2  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~96470 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:588456
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~36581 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:239445
+      1    1.8%        LazyCompile: ~87667 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:91501
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~77793 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:89236
+      1    1.8%        LazyCompile: ~84206 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:133646
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~86575 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:133433
+      1    1.8%        LazyCompile: ~7634 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:382933
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~92547 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402783
+      1    1.8%        LazyCompile: ~74855 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:609676
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~84206 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:133646
+      1    1.8%        LazyCompile: ~73819 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:401108
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~69301 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:757
+      1    1.8%        LazyCompile: ~72739 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:777229
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~72408 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:736919
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~67294 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:742872
+      1    1.8%        LazyCompile: ~71611 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:309813
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~35178 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:401664
+      1    1.8%        LazyCompile: ~71459 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:403104
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~57641 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402939
+      1    1.8%        LazyCompile: ~68929 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:581109
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~90242 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:260951
+      1    1.8%        LazyCompile: ~67740 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:565700
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~13311 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:582622
+      1    1.8%        LazyCompile: ~66380 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:6442
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~16649 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:10348
+      1    1.8%        LazyCompile: ~64229 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:760174
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~42830 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:861959
+      1    1.8%        LazyCompile: ~63840 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:847872
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~64448 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:615161
+      1    1.8%        LazyCompile: ~63109 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:12269
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~51228 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:148949
+      1    1.8%        LazyCompile: ~60697 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:839070
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~14419 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:603650
+      1    1.8%        LazyCompile: ~57557 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:586370
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~55776 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:228698
+      1    1.8%        LazyCompile: ~57473 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:312040
+      1  100.0%          LazyCompile: ~n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~92547 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402783
+      1    1.8%        LazyCompile: ~57050 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:140547
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~90242 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:260951
+      1    1.8%        LazyCompile: ~48792 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:174437
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~47610 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:403035
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~73926 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402887
+      1    1.8%        LazyCompile: ~42830 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:861959
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~53479 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:904132
+      1    1.8%        LazyCompile: ~41910 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402187
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~43536 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:305159
+      1    1.8%        LazyCompile: ~37501 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:362259
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~91018 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:310295
+      1    1.8%        LazyCompile: ~35393 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:565545
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~68929 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:581109
+      1    1.8%        LazyCompile: ~35143 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:338020
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~31046 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:325333
+      1    1.8%        LazyCompile: ~27698 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:411566
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~27621 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:139645
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~20032 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159662
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~37038 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159455
+      1    1.8%        LazyCompile: ~18254 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402675
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~41285 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:305554
+      1    1.8%        LazyCompile: ~17673 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:602963
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~8575 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:894952
+      1    1.8%        LazyCompile: ~1661 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:78555
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1    1.8%        LazyCompile: ~11955 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:400679
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~20116 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:541
+     40    2.0%      LazyCompile: *SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+     40  100.0%        LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+     40  100.0%          LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+     40  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+
+    111    3.5%  __write
+     99   89.2%    /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+     14   14.1%      Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1    7.1%        LazyCompile: ~9697 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:48588
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~24284 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:62554
+      1    7.1%        LazyCompile: ~86672 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:42755
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~90 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:1313
+      1    7.1%        LazyCompile: ~85616 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:49584
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~37501 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:82008
+      1    7.1%        LazyCompile: ~84426 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:40898
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~8933 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:96892
+      1    7.1%        LazyCompile: ~84234 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:36693
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~81493 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:42711
+      1    7.1%        LazyCompile: ~78363 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:1136
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~46868 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:2008
+      1    7.1%        LazyCompile: ~7634 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:95103
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~92547 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:97381
+      1    7.1%        LazyCompile: ~74529 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:73843
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~49677 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:68728
+      1    7.1%        LazyCompile: ~69389 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:173655
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~53816 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:186530
+      1    7.1%        LazyCompile: ~69355 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:40449
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~62856 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:96761
+      1    7.1%        LazyCompile: ~44239 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:167818
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~33448 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:188720
+      1    7.1%        LazyCompile: ~27361 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:187060
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~16432 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:170937
+      1    7.1%        LazyCompile: ~1989 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:164015
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~24785 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:181621
+      1    7.1%        LazyCompile: ~14419 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:193355
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:282035
+     10   10.1%      Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1   10.0%        LazyCompile: ~98881 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:365600
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~52956 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:311499
+      1   10.0%        LazyCompile: ~97451 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:117514
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1   10.0%        LazyCompile: ~89465 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:553689
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~86556 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:553100
+      1   10.0%        LazyCompile: ~70344 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:341127
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~11035 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:370682
+      1   10.0%        LazyCompile: ~49221 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:362413
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~45999 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:310379
+      1   10.0%        LazyCompile: ~38517 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:573609
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~59783 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:560313
+      1   10.0%        LazyCompile: ~34309 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:578519
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~46384 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:551225
+      1   10.0%        LazyCompile: ~27698 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:411566
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1   10.0%        LazyCompile: ~26821 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:92677
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1   10.0%        LazyCompile: ~20032 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159662
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~37038 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159455
+      2    2.0%      Function: ^_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      1   50.0%        Function: ^split /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:94:9
+      1  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1   50.0%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      1  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      2    2.0%      /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1   50.0%        LazyCompile: ~printMessages /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:116:18
+      1  100.0%          LazyCompile: ~log /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:29:8
+      1  100.0%            LazyCompile: ~log /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/logger.service.js:36:8
+      1   50.0%        LazyCompile: ~parseRange /home/qbuser/Documents/store-mate-api/node_modules/semver/classes/range.js:79:14
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/semver/classes/range.js:34:12
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~validateNumber node:internal/validators:123:24
+      1  100.0%        Function: ^<anonymous> node:buffer:349:36
+      1  100.0%          Function: ^allocUnsafe node:buffer:373:42
+      1  100.0%            Function: ^tryCreateBuffer node:fs:414:25
+      1    1.0%      LazyCompile: ~use /home/qbuser/Documents/store-mate-api/node_modules/ast-types/fork.js:40:17
+      1  100.0%        LazyCompile: ~default_1 /home/qbuser/Documents/store-mate-api/node_modules/ast-types/def/babel.js:6:19
+      1  100.0%          LazyCompile: ~use /home/qbuser/Documents/store-mate-api/node_modules/ast-types/fork.js:40:17
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~strcmp /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/util.js:373:16
+      1  100.0%        LazyCompile: ~compareByOriginalPositions /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/util.js:304:36
+      1  100.0%          Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1  100.0%            LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1    1.0%      LazyCompile: ~resume /home/qbuser/Documents/store-mate-api/node_modules/fastq/queue.js:77:19
+      1  100.0%        LazyCompile: ~setup /home/qbuser/Documents/store-mate-api/node_modules/avvio/plugin.js:146:17
+      1  100.0%          LazyCompile: ~Plugin.loadedSoFar /home/qbuser/Documents/store-mate-api/node_modules/avvio/plugin.js:141:41
+      1  100.0%            LazyCompile: ~Boot._loadRegistered /home/qbuser/Documents/store-mate-api/node_modules/avvio/boot.js:220:43
+      1    1.0%      LazyCompile: ~resOnFinish node:_http_server:793:21
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~onFinish node:_http_outgoing:828:18
+      1  100.0%            LazyCompile: ~callback node:internal/streams/writable:550:44
+      1    1.0%      LazyCompile: ~processTimers node:internal/timers:487:25
+      1    1.0%      LazyCompile: ~prepareRoute /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/route.js:116:25
+      1  100.0%        LazyCompile: ~_patch /home/qbuser/Documents/store-mate-api/node_modules/fastify/fastify.js:249:28
+      1  100.0%          LazyCompile: ~injectConstraintsIfVersioned /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/platform-fastify/adapters/fastify-adapter.js:306:33
+      1  100.0%            LazyCompile: ~patch /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/platform-fastify/adapters/fastify-adapter.js:122:10
+      1    1.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.0%      LazyCompile: ~preValidationCallback /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/handleRequest.js:81:32
+      1  100.0%        LazyCompile: ~handler /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/handleRequest.js:63:18
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/contentTypeParser.js:171:30
+      1  100.0%            Function: ^runInAsyncScope node:async_hooks:196:18
+      1    1.0%      LazyCompile: ~performValidations /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/ValidationExecutor.js:122:23
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/ValidationExecutor.js:65:47
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            LazyCompile: ~execute /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/ValidationExecutor.js:32:12
+      1    1.0%      LazyCompile: ~operate /home/qbuser/Documents/store-mate-api/node_modules/rxjs/dist/cjs/internal/util/lift.js:9:17
+      1  100.0%        LazyCompile: ~catchError /home/qbuser/Documents/store-mate-api/node_modules/rxjs/dist/cjs/internal/operators/catchError.js:7:20
+      1  100.0%          LazyCompile: ~runQuery /home/qbuser/Documents/store-mate-api/dist/src/database/database.service.js:35:13
+      1  100.0%            LazyCompile: ~rawQuery /home/qbuser/Documents/store-mate-api/dist/src/database/database.service.js:70:13
+      1    1.0%      LazyCompile: ~omitParamKeys /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/swagger-types-mapper.js:61:18
+      1  100.0%        Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/swagger-types-mapper.js:18:31
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            Function: ^mapParamTypes /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/swagger-types-mapper.js:17:18
+      1    1.0%      LazyCompile: ~n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%        LazyCompile: ~56664 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:336833
+      1  100.0%          LazyCompile: ~n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~46935 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:352662
+      1    1.0%      LazyCompile: ~jwsSecuredInput /home/qbuser/Documents/store-mate-api/node_modules/jws/lib/sign-stream.js:18:25
+      1  100.0%        LazyCompile: ~jwsSign /home/qbuser/Documents/store-mate-api/node_modules/jws/lib/sign-stream.js:25:17
+      1  100.0%          LazyCompile: ~module.exports /home/qbuser/Documents/store-mate-api/node_modules/jsonwebtoken/sign.js:82:27
+      1  100.0%            LazyCompile: ~sign /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/jwt/dist/jwt.service.js:25:9
+      1    1.0%      LazyCompile: ~internals.Ref /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/ref.js:92:16
+      1  100.0%        LazyCompile: ~exports.create /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/ref.js:25:27
+      1  100.0%          LazyCompile: ~reference /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/template.js:206:27
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@sideway/formula/lib/index.js:223:33
+      1    1.0%      LazyCompile: ~intercept /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/interceptors/interceptors-consumer.js:9:20
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-execution-context.js:40:16
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~initTemplateAdapter /home/qbuser/Documents/store-mate-api/node_modules/@nestjs-modules/mailer/dist/mailer.service.js:42:24
+      1  100.0%        LazyCompile: ~MailerService /home/qbuser/Documents/store-mate-api/node_modules/@nestjs-modules/mailer/dist/mailer.service.js:11:16
+      1  100.0%          Function: ^instantiateClass /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:329:27
+      1  100.0%            Function: ^callback /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:51:30
+      1    1.0%      LazyCompile: ~init /home/qbuser/Documents/store-mate-api/dist/src/shared/custom-logger/custom-logger.service.js:19:9
+      1  100.0%        LazyCompile: ~CustomLogger /home/qbuser/Documents/store-mate-api/dist/src/shared/custom-logger/custom-logger.service.js:15:16
+      1  100.0%          LazyCompile: ~bootstrap /home/qbuser/Documents/store-mate-api/dist/src/main.js:16:25
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/main.js:1:1
+      1    1.0%      LazyCompile: ~i /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:452398
+      1  100.0%        LazyCompile: ~e.exports /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:480513
+      1  100.0%          LazyCompile: ~registerLanguage /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:471078
+      1  100.0%            LazyCompile: ~t.registerLanguage /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:588987
+      1    1.0%      LazyCompile: ~howMuchToRead node:internal/streams/readable:377:23
+      1  100.0%        Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%          Function: ^resume_ node:internal/streams/readable:984:17
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.0%      LazyCompile: ~getContextId /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:441:17
+      1  100.0%        Function: ^loadInstance /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:30:23
+      1  100.0%          Function: ^loadProvider /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:82:23
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:47:40
+      1    1.0%      LazyCompile: ~getAllKeysIn /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:5927:26
+      1  100.0%        LazyCompile: ~pickBy /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13649:20
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/decorators/helpers.js:23:12
+      1  100.0%            Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1    1.0%      LazyCompile: ~get aliases node:internal/options:66:14
+      1  100.0%        LazyCompile: ~buildAllowedFlags node:internal/process/per_thread:265:27
+      1  100.0%          LazyCompile: ~get node:internal/bootstrap/node:278:6
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-application-context.js:54:8
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-factory.js:132:50
+      1  100.0%          LazyCompile: ~run /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/errors/exceptions-zone.js:8:15
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-factory.js:130:16
+      1    1.0%      LazyCompile: ~ge /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:495901
+      1  100.0%        LazyCompile: ~Ge.update /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:509501
+      1  100.0%          LazyCompile: ~it /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:507175
+      1  100.0%            LazyCompile: ~at /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:506877
+      1    1.0%      LazyCompile: ~explore /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-explorer.js:48:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/routes-resolver.js:42:33
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/routes-resolver.js:36:24
+      1    1.0%      LazyCompile: ~escapeRE /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:30:18
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~compile /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:150:17
+      1  100.0%            LazyCompile: ~tlds /home/qbuser/Documents/store-mate-api/node_modules/linkify-it/index.js:616:41
+      1    1.0%      LazyCompile: ~enableCors /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-application.js:146:15
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-factory.js:132:50
+      1  100.0%          LazyCompile: ~run /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/errors/exceptions-zone.js:8:15
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/nest-factory.js:130:16
+      1    1.0%      LazyCompile: ~decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1  100.0%        LazyCompile: ~__decorate /home/qbuser/Documents/store-mate-api/node_modules/tslib/tslib.js:97:27
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~createSchemaMetadata /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:253:25
+      1  100.0%        LazyCompile: ~mergePropertyWithMetadata /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:109:30
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:78:56
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~createCallbackProxy /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-explorer.js:165:24
+      1  100.0%        LazyCompile: ~applyCallbackToRouter /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-explorer.js:96:26
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-explorer.js:90:42
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      LazyCompile: ~coreValidate /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/Validator.js:43:17
+      1  100.0%        LazyCompile: ~validate /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/Validator.js:12:13
+      1  100.0%          LazyCompile: ~validate /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/index.js:35:18
+      1  100.0%            LazyCompile: ~validate /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/pipes/validation.pipe.js:141:13
+      1    1.0%      LazyCompile: ~cleanup /home/qbuser/Documents/store-mate-api/node_modules/ee-first/index.js:58:19
+      1  100.0%        LazyCompile: ~callback /home/qbuser/Documents/store-mate-api/node_modules/ee-first/index.js:53:20
+      1  100.0%          LazyCompile: ~onevent /home/qbuser/Documents/store-mate-api/node_modules/ee-first/index.js:81:26
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.0%      LazyCompile: ~chooseScalarStyle /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:317:27
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:396:26
+      1  100.0%          LazyCompile: ~writeScalar /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:395:21
+      1  100.0%            LazyCompile: ~writeNode /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:797:19
+      1    1.0%      LazyCompile: ~applyMetadataFactory /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/model-properties-accessor.js:18:25
+      1  100.0%        Function: ^extractPropertiesFromType /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:69:30
+      1  100.0%          Function: ^exploreModelSchema /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:88:23
+      1  100.0%            LazyCompile: ~createNotBuiltInTypeReference /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/services/schema-object-factory.js:168:34
+      1    1.0%      LazyCompile: ~addListener node:events:618:58
+      1  100.0%        LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.0%      LazyCompile: ~_flush node:_http_outgoing:934:51
+      1  100.0%        LazyCompile: ~assignSocket node:_http_server:240:62
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:857:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.0%      LazyCompile: ~_destroy node:internal/streams/destroy:70:18
+      1  100.0%        LazyCompile: ~destroy node:internal/streams/destroy:32:17
+      1  100.0%          LazyCompile: ~endReadableNT node:internal/streams/readable:1338:23
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.0%      LazyCompile: ~_connect /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/client.js:88:11
+      1  100.0%        LazyCompile: ~connect /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/client.js:159:10
+      1  100.0%          LazyCompile: ~newClient /home/qbuser/Documents/store-mate-api/node_modules/pg-pool/index.js:212:12
+      1  100.0%            LazyCompile: ~connect /home/qbuser/Documents/store-mate-api/node_modules/pg-pool/index.js:166:10
+      1    1.0%      LazyCompile: ~__extends /home/qbuser/Documents/store-mate-api/node_modules/@selderee/plugin-htmlparser2/node_modules/domhandler/lib/node.js:9:21
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@selderee/plugin-htmlparser2/node_modules/domhandler/lib/node.js:135:40
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@selderee/plugin-htmlparser2/node_modules/domhandler/lib/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.0%      LazyCompile: ~WritableState node:internal/streams/writable:77:23
+      1  100.0%        LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1  100.0%          LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%            LazyCompile: ~Socket node:net:285:16
+      1    1.0%      LazyCompile: ~Socket._read node:net:618:34
+      1  100.0%        Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%          Function: ^Socket.read node:net:661:33
+      1  100.0%            LazyCompile: ~maybeReadMore_ node:internal/streams/readable:609:24
+      1    1.0%      LazyCompile: ~SessionStrategy /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/strategies/session.js:14:25
+      1  100.0%        LazyCompile: ~Authenticator.init /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/authenticator.js:29:40
+      1  100.0%          LazyCompile: ~Authenticator /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/authenticator.js:13:23
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/index.js:1:1
+      1    1.0%      LazyCompile: ~ParseErrorEnum /home/qbuser/Documents/store-mate-api/node_modules/@babel/parser/lib/index.js:399:24
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@babel/parser/lib/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~OrdinaryDefineOwnMetadata /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:619:43
+      1  100.0%        LazyCompile: ~decorator /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:177:31
+      1  100.0%          LazyCompile: ~DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1  100.0%            LazyCompile: ~decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1    1.0%      LazyCompile: ~Mt /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:636784
+      1  100.0%        LazyCompile: ~64448 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:615161
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~73935 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:733176
+      1    1.0%      LazyCompile: ~IteratorWithOperators /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/iterate.js:14:16
+      1  100.0%        LazyCompile: ~map /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/iterate.js:33:8
+      1  100.0%          LazyCompile: ~scanFromPrototype /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/metadata-scanner.js:7:22
+      1  100.0%            LazyCompile: ~reflectInjectables /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:134:23
+      1    1.0%      LazyCompile: ~Field /home/qbuser/Documents/store-mate-api/node_modules/ast-types/lib/types.js:197:19
+      1  100.0%        LazyCompile: ~DefImpl.field /home/qbuser/Documents/store-mate-api/node_modules/ast-types/lib/types.js:518:44
+      1  100.0%          LazyCompile: ~DefImpl.build /home/qbuser/Documents/store-mate-api/node_modules/ast-types/lib/types.js:399:44
+      1  100.0%            LazyCompile: ~default_1 /home/qbuser/Documents/store-mate-api/node_modules/ast-types/def/core.js:6:19
+      1    1.0%      LazyCompile: ~ApiNotFoundResponse /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.js:46:29
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/admin/admin.controller.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:223456
+      1  100.0%        LazyCompile: ~64229 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:219481
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            LazyCompile: ~42830 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:251685
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:33:29
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:33:29
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:41:17
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:19:15
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:396:26
+      1  100.0%        LazyCompile: ~writeScalar /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:395:21
+      1  100.0%          LazyCompile: ~writeNode /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:797:19
+      1  100.0%            LazyCompile: ~writeBlockMapping /home/qbuser/Documents/store-mate-api/node_modules/js-yaml/lib/dumper.js:673:27
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-proxy.js:7:16
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:24:25
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~createPrototypes /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:23:21
+      1  100.0%            LazyCompile: ~createInstancesOfDependencies /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/instance-loader.js:19:40
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/decorators/http/create-route-param-metadata.decorator.js:15:32
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/auth/auth.controller.js:12:21
+      1  100.0%          Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1  100.0%            Function: ^decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1    1.0%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/product/product.controller.js:12:21
+      1  100.0%        Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1  100.0%          Function: ^decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1  100.0%            LazyCompile: ~__decorate /home/qbuser/Documents/store-mate-api/dist/src/api/product/product.controller.js:2:56
+      1    1.0%      LazyCompile: ~85906 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:75835
+      1  100.0%        Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%          LazyCompile: ~57473 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:42170
+      1  100.0%            Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1    1.0%      LazyCompile: *_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      1  100.0%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      1  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1    1.0%      Function: ~<anonymous> node:internal/streams/lazy_transform:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isHalfWidth.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:236
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:226
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:10
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/htmlparser2/lib/FeedHandler.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/decorator/string/IsISBN.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/babel-walk/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/explorers/api-parameters.explorer.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/product/product.service.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.0%      Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/filter.js:8:9
+      1  100.0%        LazyCompile: *next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/map.js:11:9
+      1  100.0%          Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/iterate.js:20:9
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.0%      Function: ^arrayEach /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:525:21
+      1  100.0%        Function: ~runInContext /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:1448:44
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:9:11
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:1:1
+      1    1.0%      Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1  100.0%        LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      1  100.0%          LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+      1  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1    1.0%      Function: ^IsObject /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:718:26
+      1  100.0%        Function: ^decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1  100.0%          Function: ^__decorate /home/qbuser/Documents/store-mate-api/dist/src/api/dto/product.dto.js:2:56
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/dto/product.dto.js:1:1
+      1    1.0%      Eval: ~<anonymous> :1:1
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          Function: ^_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      1  100.0%            Function: ^split /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:94:9
+
+     69    2.2%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     60   87.0%    /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      6   10.0%      /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1   16.7%        LazyCompile: ~setup /home/qbuser/Documents/store-mate-api/node_modules/debug/src/common.js:7:15
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/debug/src/node.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1   16.7%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   16.7%        LazyCompile: ~attempt /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/middleware/authenticate.js:180:22
+      1  100.0%          LazyCompile: ~authenticate /home/qbuser/Documents/store-mate-api/node_modules/passport/lib/middleware/authenticate.js:94:31
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/passport/dist/auth.guard.js:88:95
+      1   16.7%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/database/database.service.js:50:37
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            LazyCompile: ~underScoreToCamelCase /home/qbuser/Documents/store-mate-api/dist/src/database/database.service.js:48:26
+      1   16.7%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1   16.7%        Function: ^Module /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/decorators/modules/module.decorator.js:19:16
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/auth/auth.module.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      4    6.7%      Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1   25.0%        LazyCompile: ~73935 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:733176
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~55776 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:228698
+      1   25.0%        LazyCompile: ~55776 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:228698
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~73420 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:228055
+      1   25.0%        LazyCompile: ~37761 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:127226
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~97451 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:117514
+      1   25.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:236
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:226
+      3    5.0%      LazyCompile: *_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      2   66.7%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      2  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1   50.0%            Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1   50.0%            Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1   33.3%        Function: ^split /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:94:9
+      1  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      3    5.0%      LazyCompile: *SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      3  100.0%        LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      3  100.0%          LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+      3  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      2    3.3%      LazyCompile: ~getTimestamp /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:105:17
+      2  100.0%        LazyCompile: ~formatMessage /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:129:18
+      2  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/services/console-logger.service.js:117:26
+      2  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      2    3.3%      LazyCompile: *resolve node:path:1091:10
+      1   50.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    1.7%      LazyCompile: ~use /home/qbuser/Documents/store-mate-api/node_modules/ast-types/fork.js:40:17
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~default_1 /home/qbuser/Documents/store-mate-api/node_modules/ast-types/fork.js:9:19
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/ast-types/main.js:1:1
+      1    1.7%      LazyCompile: ~stop /home/qbuser/Documents/store-mate-api/node_modules/avvio/time-tree.js:89:8
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/avvio/boot.js:253:24
+      1  100.0%          Function: ^onceWrapper node:events:636:21
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.7%      LazyCompile: ~prepareStackTrace /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:433:27
+      1  100.0%        LazyCompile: ~maybeOverridePrepareStackTrace node:internal/errors:136:40
+      1  100.0%          LazyCompile: ~prepareStackTrace node:internal/errors:91:27
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.7%      LazyCompile: ~parseSourceMapInput /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/util.js:432:29
+      1  100.0%        LazyCompile: ~SourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:14:27
+      1  100.0%          LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1  100.0%            LazyCompile: ~wrapCallSite /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:368:22
+      1    1.7%      LazyCompile: ~n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%        LazyCompile: ~49677 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:343588
+      1  100.0%          LazyCompile: ~n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~76887 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:329260
+      1    1.7%      LazyCompile: ~lookup /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:364:43
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:857:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.7%      LazyCompile: ~internals.finalize /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/validator.js:453:31
+      1  100.0%        LazyCompile: ~exports.validate /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/validator.js:173:29
+      1  100.0%          LazyCompile: ~$_validate /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/base.js:771:15
+      1  100.0%            LazyCompile: ~validate /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/types/keys.js:52:13
+      1    1.7%      LazyCompile: ~instantiateClass /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:329:27
+      1  100.0%        LazyCompile: ~callback /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/injector.js:51:30
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1    1.7%      LazyCompile: ~hookIterator /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:244:23
+      1  100.0%        LazyCompile: ~next /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:166:17
+      1  100.0%          LazyCompile: ~hookRunner /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:163:21
+      1  100.0%            LazyCompile: ~routeHandler /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/route.js:352:25
+      1    1.7%      LazyCompile: ~getInverseReplacer /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/entities/lib/encode.js:48:28
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/entities/lib/encode.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%      LazyCompile: ~connectionListenerInternal node:_http_server:448:36
+      1  100.0%        LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1  100.0%          LazyCompile: ~connectionListener node:_http_server:442:28
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.7%      LazyCompile: ~__export /home/qbuser/Documents/store-mate-api/node_modules/@nestjs-modules/mailer/index.js:2:18
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs-modules/mailer/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%      LazyCompile: ~SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1  100.0%        LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      1  100.0%          LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+      1  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1    1.7%      LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    1.7%      LazyCompile: ~Dr.add /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:149583
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:148911
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:146271
+      1  100.0%            LazyCompile: ~et.__iterate /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:113781
+      1    1.7%      LazyCompile: ~BasicSourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:288:32
+      1  100.0%        LazyCompile: ~SourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:14:27
+      1  100.0%          LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1  100.0%            LazyCompile: ~wrapCallSite /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:368:22
+      1    1.7%      LazyCompile: ~ArraySet_fromArray /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/array-set.js:26:49
+      1  100.0%        LazyCompile: ~BasicSourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:288:32
+      1  100.0%          LazyCompile: ~SourceMapConsumer /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:14:27
+      1  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1    1.7%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-scanner.js:27:47
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~scanApplication /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-scanner.js:19:20
+      1  100.0%            LazyCompile: ~createDocument /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-module.js:11:26
+      1    1.7%      LazyCompile: ~19069 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:272978
+      1  100.0%        Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%          LazyCompile: ~90242 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:260951
+      1  100.0%            Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1    1.7%      LazyCompile: *realpathSync node:fs:2425:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    1.7%      LazyCompile: *normalizeString node:path:66:25
+      1  100.0%        Function: ^resolve node:path:1091:10
+      1  100.0%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/mailparser/node_modules/iconv-lite/lib/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/list-stylesheets/node_modules/entities/lib/decode.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/libphonenumber-js/build/helpers/getIddPrefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/cookiejar/cookiejar.js:2:11
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/cookiejar/cookiejar.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/decorator/string/IsCurrency.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/ajv/dist/compile/names.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/dto/store.dto.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%      Function: ^createContext /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/helpers/context-creator.js:6:18
+      1  100.0%        Function: ^create /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/guards/guards-context-creator.js:15:11
+      1  100.0%          Function: ^create /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-execution-context.js:27:11
+      1  100.0%            Function: ^createCallbackProxy /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/router/router-explorer.js:165:24
+      1    1.7%      Function: ^castPath /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:4517:22
+      1  100.0%        Function: ^hasPath /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:6183:21
+      1  100.0%          Function: ^hasIn /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13256:19
+      1  100.0%            Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:3802:48
+      1    1.7%      Function: ^assignCustomParameterMetadata /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/utils/assign-custom-metadata.util.js:5:39
+      1  100.0%        Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/decorators/http/create-route-param-metadata.decorator.js:15:32
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/beacon/beacon.controller.js:12:21
+      1  100.0%            Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1    1.7%      Function: ^_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      1  100.0%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      1  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1    1.7%      Function: ^_compileGetHandlerMatchingConstraints /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:100:41
+      1  100.0%        Function: ^addHandler /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:19:14
+      1  100.0%          Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1  100.0%            Function: ^Router._rebuild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:498:38
+      1    1.7%      Function: ^_compileCreateParamsObject /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:54:30
+      1  100.0%        Function: ^addHandler /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:19:14
+      1  100.0%          Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1  100.0%            Function: ^Router._rebuild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:498:38
+      1    1.7%      Function: ^Router._rebuild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:498:38
+      1  100.0%        LazyCompile: ~_off /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:348:39
+      1  100.0%          LazyCompile: ~off /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:315:37
+      1  100.0%            Function: ^addNewRoute /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/route.js:202:26
+      1    1.7%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/validator/lib/isIdentityCard.js:1:1
+      1    1.7%      Function: ^DecorateProperty /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:550:34
+      1  100.0%        Function: ^decorate /home/qbuser/Documents/store-mate-api/node_modules/reflect-metadata/Reflect.js:112:26
+      1  100.0%          LazyCompile: ~__decorate /home/qbuser/Documents/store-mate-api/dist/src/api/store-admin/store-admin.controller.js:2:56
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/api/store-admin/store-admin.controller.js:1:1
+      1    1.7%      Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:67728
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~45308 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:67543
+      1  100.0%            Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1    1.7%      Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/metadata/MetadataStorage.js:47:26
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~groupByPropertyName /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/metadata/MetadataStorage.js:45:24
+      1  100.0%            LazyCompile: ~execute /home/qbuser/Documents/store-mate-api/node_modules/class-validator/cjs/validation/ValidationExecutor.js:32:12
+      1    1.7%      Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/avvio/time-tree.js:58:14
+      1  100.0%        Function: ^start /home/qbuser/Documents/store-mate-api/node_modules/avvio/time-tree.js:85:9
+      1  100.0%          Function: ^<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/avvio/boot.js:251:21
+      1  100.0%            Function: ^onceWrapper node:events:636:21
+      1    1.4%    LazyCompile: *realpathSync node:fs:2425:22
+      1  100.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+     59    1.9%  fwrite
+     55   93.2%    /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      7   12.7%      Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1   14.3%        LazyCompile: ~93705 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:73086
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1   14.3%        LazyCompile: ~58234 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:569574
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~16096 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:568702
+      1   14.3%        LazyCompile: ~52999 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:306740
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~68025 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:308983
+      1   14.3%        LazyCompile: ~52956 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:311499
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~27460 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:402579
+      1   14.3%        LazyCompile: ~51228 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:148949
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~20032 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:159662
+      1   14.3%        LazyCompile: ~44239 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:556286
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~23560 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:584240
+      1   14.3%        LazyCompile: ~36581 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:239445
+      1  100.0%          Function: ^n /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:957383
+      1  100.0%            LazyCompile: ~84206 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:133646
+      3    5.5%      LazyCompile: ~getVersionString /home/qbuser/Documents/store-mate-api/node_modules/nodemailer/lib/mailer/index.js:238:21
+      3  100.0%        LazyCompile: ~Mail /home/qbuser/Documents/store-mate-api/node_modules/nodemailer/lib/mailer/index.js:24:16
+      3  100.0%          LazyCompile: ~module.exports.createTransport /home/qbuser/Documents/store-mate-api/node_modules/nodemailer/lib/nodemailer.js:20:43
+      3  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/preview-email/src/index.js:1:1
+      3    5.5%      LazyCompile: *createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      3  100.0%        LazyCompile: *createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      3  100.0%          LazyCompile: *createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      3  100.0%            LazyCompile: *createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      3    5.5%      LazyCompile: *_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      3  100.0%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      3  100.0%          Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      2   66.7%            Function: ^createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1   33.3%            Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      3    5.5%      /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1   33.3%        LazyCompile: ~writeOut node:internal/process/warning:46:18
+      1  100.0%          LazyCompile: ~onWarning node:internal/process/warning:81:19
+      1  100.0%            LazyCompile: ~emit node:events:475:44
+      1   33.3%        LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1   33.3%        LazyCompile: ~__awaiter /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/passport/dist/auth.guard.js:14:54
+      1  100.0%          LazyCompile: ~canActivate /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/passport/dist/auth.guard.js:41:20
+      1  100.0%            LazyCompile: ~canActivate /home/qbuser/Documents/store-mate-api/dist/src/guards/permission-check.guard.js:21:22
+      2    3.6%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1   50.0%        LazyCompile: ~maybeReadMore node:internal/streams/readable:602:23
+      1  100.0%          LazyCompile: ~addChunk node:internal/streams/readable:304:18
+      1  100.0%            LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+      1   50.0%        LazyCompile: ~emitWarning node:internal/process/warning:118:21
+      1  100.0%          LazyCompile: ~emit /home/qbuser/Documents/store-mate-api/node_modules/fastify-multipart/node_modules/process-warning/index.js:46:17
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/fastify-multipart/index.js:1:1
+      2    3.6%      LazyCompile: ~insert node:internal/timers:350:16
+      2  100.0%        LazyCompile: ~setTimeout node:timers:140:20
+      1   50.0%          LazyCompile: ~timeoutCall /home/qbuser/Documents/store-mate-api/node_modules/avvio/boot.js:440:22
+      1  100.0%            LazyCompile: ~callWithCbOrNextTick /home/qbuser/Documents/store-mate-api/node_modules/avvio/boot.js:405:31
+      1   50.0%          LazyCompile: ~Plugin.exec /home/qbuser/Documents/store-mate-api/node_modules/avvio/plugin.js:65:34
+      1  100.0%            LazyCompile: ~loadPlugin /home/qbuser/Documents/store-mate-api/node_modules/avvio/plugin.js:255:21
+      2    3.6%      LazyCompile: ~generateHolderClass /home/qbuser/Documents/store-mate-api/node_modules/bluebird/js/release/join.js:27:39
+      2  100.0%        LazyCompile: ~module.exports /home/qbuser/Documents/store-mate-api/node_modules/bluebird/js/release/join.js:3:9
+      2  100.0%          LazyCompile: ~module.exports /home/qbuser/Documents/store-mate-api/node_modules/bluebird/js/release/promise.js:2:26
+      2  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/bluebird/js/release/bluebird.js:1:1
+      2    3.6%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      2  100.0%        LazyCompile: ~Socket node:net:285:16
+      2  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      2  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    1.8%      LazyCompile: ~v4 /home/qbuser/Documents/store-mate-api/node_modules/uuid/dist/v4.js:14:12
+      1  100.0%        LazyCompile: ~createParamDecorator /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/common/decorators/http/create-route-param-metadata.decorator.js:13:30
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/dist/src/decorator/jwt.decorator.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%          LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1    1.8%      LazyCompile: ~subarray node:buffer:1116:46
+      1  100.0%        LazyCompile: ~slice node:buffer:1124:40
+      1  100.0%          LazyCompile: ~join /home/qbuser/Documents/store-mate-api/node_modules/pg-protocol/dist/buffer-writer.js:63:9
+      1  100.0%            LazyCompile: ~flush /home/qbuser/Documents/store-mate-api/node_modules/pg-protocol/dist/buffer-writer.js:72:10
+      1    1.8%      LazyCompile: ~runTokens /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:219:23
+      1  100.0%        LazyCompile: ~self /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:307:21
+      1  100.0%          LazyCompile: ~self.union /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:841:27
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:2052:11
+      1    1.8%      LazyCompile: ~runMiddie /home/qbuser/Documents/store-mate-api/node_modules/@fastify/middie/index.js:31:22
+      1  100.0%        LazyCompile: ~hookIterator /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:244:23
+      1  100.0%          LazyCompile: ~next /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:166:17
+      1  100.0%            LazyCompile: ~hookRunner /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/hooks.js:163:21
+      1    1.8%      LazyCompile: ~resetQueue /home/qbuser/Documents/store-mate-api/node_modules/graceful-fs/graceful-fs.js:383:21
+      1  100.0%        LazyCompile: ~closeSync /home/qbuser/Documents/store-mate-api/node_modules/graceful-fs/graceful-fs.js:72:24
+      1  100.0%          Function: ^readFileSync node:fs:450:22
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~patch /home/qbuser/Documents/store-mate-api/node_modules/graceful-fs/polyfills.js:29:16
+      1  100.0%        LazyCompile: ~patch /home/qbuser/Documents/store-mate-api/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%      LazyCompile: ~parserOnIncoming node:_http_server:857:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.8%      LazyCompile: ~insertProvider /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:196:19
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:102:27
+      1  100.0%          /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            LazyCompile: ~reflectProviders /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/scanner.js:97:21
+      1    1.8%      LazyCompile: ~hrtime node:internal/process/per_thread:79:16
+      1  100.0%        Function: ^recordStartTime /home/qbuser/Documents/store-mate-api/node_modules/morgan/index.js:527:26
+      1  100.0%          LazyCompile: ~writeHead /home/qbuser/Documents/store-mate-api/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: ~onSendEnd /home/qbuser/Documents/store-mate-api/node_modules/fastify/lib/reply.js:515:20
+      1    1.8%      LazyCompile: ~getTypeParser /home/qbuser/Documents/store-mate-api/node_modules/pg-types/index.js:25:24
+      1  100.0%        LazyCompile: ~TypeOverrides.getTypeParser /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/type-overrides.js:30:50
+      1  100.0%          LazyCompile: ~addFields /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/result.js:80:12
+      1  100.0%            LazyCompile: ~handleRowDescription /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/query.js:73:23
+      1    1.8%      LazyCompile: ~exports.schema /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/compile.js:12:27
+      1  100.0%        LazyCompile: ~$_compile /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/base.js:643:14
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/types/keys.js:260:44
+      1  100.0%            LazyCompile: ~exports.tryWithPath /home/qbuser/Documents/store-mate-api/node_modules/joi/lib/common.js:173:32
+      1    1.8%      LazyCompile: ~copy /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:139:18
+      1  100.0%        LazyCompile: ~on /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:389:22
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:22:32
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/xregexp/xregexp-all.js:1:1
+      1    1.8%      LazyCompile: ~baseSet /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:4020:21
+      1  100.0%        LazyCompile: ~basePickBy /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:3816:24
+      1  100.0%          LazyCompile: ~pickBy /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13649:20
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/decorators/helpers.js:23:12
+      1    1.8%      LazyCompile: ~_compilePrefixMatch /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:140:23
+      1  100.0%        Function: ^StaticNode /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:55:15
+      1  100.0%          LazyCompile: ~createStaticChild /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/custom_node.js:31:21
+      1  100.0%            Function: ^_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1    1.8%      LazyCompile: ~_compileGetHandlerMatchingConstraints /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:100:41
+      1  100.0%        LazyCompile: ~addHandler /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/handler_storage.js:19:14
+      1  100.0%          LazyCompile: ~_on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:141:37
+      1  100.0%            LazyCompile: ~on /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:96:35
+      1    1.8%      LazyCompile: ~__webpack_require__ /home/qbuser/Documents/store-mate-api/node_modules/esprima/dist/esprima.js:18:39
+      1  100.0%        LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/esprima/dist/esprima.js:412:15
+      1  100.0%          LazyCompile: ~__webpack_require__ /home/qbuser/Documents/store-mate-api/node_modules/esprima/dist/esprima.js:18:39
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/esprima/dist/esprima.js:58:15
+      1    1.8%      LazyCompile: ~Router.querystringParser /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:81:30
+      1  100.0%        Function: ^find /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:372:39
+      1  100.0%          LazyCompile: ~lookup /home/qbuser/Documents/store-mate-api/node_modules/find-my-way/index.js:364:43
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.8%      LazyCompile: ~Readable node:internal/streams/readable:181:18
+      1  100.0%        LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%          LazyCompile: ~Socket node:net:285:16
+      1  100.0%            LazyCompile: ~WriteStream node:tty:85:21
+      1    1.8%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/pg/lib/connection.js:109:19
+      1  100.0%        LazyCompile: ~parse /home/qbuser/Documents/store-mate-api/node_modules/pg-protocol/dist/parser.js:28:10
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/pg-protocol/dist/index.js:11:23
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.8%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:71:111
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/swagger/dist/swagger-explorer.js:71:79
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/lodash/lodash.js:13468:34
+      1    1.8%      LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/container.js:146:36
+      1  100.0%        /home/qbuser/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%          LazyCompile: ~bindGlobalsToImports /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/container.js:145:25
+      1  100.0%            LazyCompile: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/@nestjs/core/injector/container.js:143:30
+      1    1.8%      LazyCompile: ~43393 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:107179
+      1  100.0%        Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:282035
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:256
+      1    1.8%      Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1    1.8%      Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:958159
+      1  100.0%        Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:236
+      1  100.0%          Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:226
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:10
+      1    1.8%      Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%        LazyCompile: ~78914 /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:603
+      1  100.0%          Function: ^r /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:281259
+      1  100.0%            Function: ~<anonymous> /home/qbuser/Documents/store-mate-api/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:282035
+      1    1.8%      Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/filter.js:8:9
+      1  100.0%        Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/filter.js:8:9
+      1  100.0%          Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/map.js:11:9
+      1  100.0%            Function: ^next /home/qbuser/Documents/store-mate-api/node_modules/iterare/lib/iterate.js:20:9
+
+     43    1.4%  LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     39   90.7%    LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     38   97.4%      LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     36   94.7%        LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     36  100.0%          LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+     33   91.7%            LazyCompile: *doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      2    5.6%            LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1    2.8%            Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1    2.6%        LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1  100.0%          Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1  100.0%            LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      1    2.6%        Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1  100.0%          Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1  100.0%            LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1    2.6%      Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1  100.0%        LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1  100.0%          Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1  100.0%            LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      3    7.0%    LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      3  100.0%      Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      3  100.0%        LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      3  100.0%          LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+      3  100.0%            LazyCompile: ~mapSourcePosition /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/source-map-support.js:212:27
+      1    2.3%    Function: ^doQuickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:58:21
+      1  100.0%      LazyCompile: ~exports.quickSort /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/quick-sort.js:112:30
+      1  100.0%        Function: ^SourceMapConsumer_parseMappings /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:468:43
+      1  100.0%          LazyCompile: ~get /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:68:17
+      1  100.0%            LazyCompile: ~SourceMapConsumer_originalPositionFor /home/qbuser/Documents/store-mate-api/node_modules/source-map-support/node_modules/source-map/lib/source-map-consumer.js:647:49
+

@@ -1,0 +1,42 @@
+import { AssigningOfferDto, BarchartSpanDto, ChartSpanTypeDto, DeleteRewardPointsDto, FetchRewardDetailsOfStoreDto, FetchStoreWiseProductsPagination, FetchStoreWiseProductsResponse, LinechartSpanDto, MessageDto, MessageSkuUnderStore, MessageStoreFetchDto, OfferWiseProductMessageDto, SingleStoreDetailsDto, StoreStateDataResponseDto, StoreListFetchResponseDto, StoreListParamDto, StoreNameFetchDto, StoreRewardDto, StoreRewardEditDto, StoresBarchartMessageDto, StoresLinechartMessageDto, StoresPiechartMessageDto, UnAssigningOfferDto, UpdateSkuUnderStoreDto, UserProductFilterOptionsDto, StoreCountryDataResponseDto, StoreDistrictDataResponseDto, LastVisitedStoresResponseDto, LastVisitedStoresDto } from './../dto/store.dto';
+import { FetchAllStorePagination, NearbyStoreDto, StoreDto, StoreUpdateDto } from '../dto/store.dto';
+import { StoreService } from './store.service';
+import { Observable } from 'rxjs';
+import { UserProductFetchResponseDto } from '../dto/product.dto';
+import { OfferListParamDto } from '../dto/offer.dto';
+import { StoreDashboardResponseDto } from '../dto/store-admin.dto';
+export declare class StoreController {
+    private readonly storeService;
+    constructor(storeService: StoreService);
+    createStore(createBody: StoreDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    deleteStore(id: number): Observable<{
+        message: string;
+    }>;
+    getSingleStoreDetails(id: number): Observable<SingleStoreDetailsDto | Record<null, null>>;
+    getStoreDetails(param: FetchAllStorePagination): Observable<MessageDto | Record<null, null>>;
+    updateStoreProfile(id: number, body: StoreUpdateDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    fetchStoreName(param: StoreNameFetchDto): Observable<MessageDto | Record<null, null>>;
+    viewNearbyStores(jwtBody: any, param: NearbyStoreDto): Observable<MessageDto | Record<null, null>>;
+    deleteRewardPoints(param: DeleteRewardPointsDto): Observable<MessageDto | Record<null, null>>;
+    viewStoreRewardDetails(jwtBody: any, param: FetchRewardDetailsOfStoreDto): Observable<MessageDto | Record<null, null>>;
+    insertStoreRewardPoints(createBody: StoreRewardDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    updateStoreRewardPoints(updateBody: StoreRewardEditDto, jwtBody: any): Observable<MessageDto | Record<null, null>>;
+    storeWithoutRewards(): Observable<MessageDto | Record<null, null>>;
+    updateSkuUnderStore(storeId: number, productId: number, jwtBody: any, body: UpdateSkuUnderStoreDto): Promise<MessageDto>;
+    getSkuDetailUnderStore(storeId: number, productId: number, jwtBody: any): Promise<MessageSkuUnderStore>;
+    fetchStoreWiseProductList(storeId: number, param: FetchStoreWiseProductsPagination, jwtBody: any): Promise<FetchStoreWiseProductsResponse>;
+    getProductAndSkuDetails(storeId: number, sectionId: number, param: UserProductFilterOptionsDto, jwtBody: any): Observable<UserProductFetchResponseDto | Record<null, null>>;
+    assignOfferToStore(body: AssigningOfferDto): Observable<MessageDto | Record<null, null>>;
+    unAssignOfferToStore(body: UnAssigningOfferDto): Observable<MessageDto | Record<null, null>>;
+    fetchStoreList(param: StoreListParamDto): Observable<StoreListFetchResponseDto | Record<null, null>>;
+    getofferDetails(param: OfferListParamDto, storeId: number): Observable<MessageStoreFetchDto | Record<null, null>>;
+    fetchStoreDashboardData(storeId: number, jwtBody: any): Promise<StoreDashboardResponseDto | Record<null, null>>;
+    getStorePiechartDetails(storeId: number, param: ChartSpanTypeDto, jwtBody: any): Promise<StoresPiechartMessageDto | Record<null, null>>;
+    getStoreBarchartDetails(storeId: number, param: BarchartSpanDto, jwtBody: any): Promise<StoresBarchartMessageDto | Record<null, null>>;
+    getStoreVistorsTimeDetails(storeId: number, param: LinechartSpanDto, jwtBody: any): Promise<StoresLinechartMessageDto | Record<null, null>>;
+    getOfferWiseProductDetails(storeId: number, sectionId: number, offerId: number, param: UserProductFilterOptionsDto, jwtBody: any): Observable<OfferWiseProductMessageDto | Record<null, null>>;
+    fetchProductFilterData(): Observable<StoreCountryDataResponseDto | Record<null, null>>;
+    fetchStoreStateData(countryId: number): Observable<StoreStateDataResponseDto | Record<null, null>>;
+    fetchStoreDistrictData(stateId: number): Observable<StoreDistrictDataResponseDto | Record<null, null>>;
+    fetchLastVisitedStoresData(jwtBody: any, param: LastVisitedStoresDto): Observable<LastVisitedStoresResponseDto | Record<null, null>>;
+}
